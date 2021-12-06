@@ -1,0 +1,61 @@
+
+body, html {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: #439dc0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e71b4f;
+}
+
+.container {
+  width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header-section-wrapper {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-title {
+  color: #e71b4f;
+  font-weight: bold;
+  font-family: arial;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+.login-block {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.social-links-wrap {
+  display: flex;
+}
+
+.social-link {
+  display: block;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.social-link:last-child {
+  margin-right: 0;
+}
+
+.social-link:hover svg path {
+  fill: #e71b4f;
+}
