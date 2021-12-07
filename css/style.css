@@ -1,7 +1,10 @@
 
+
+/* General Styles */
 body, html {
   font-family: Arial, sans-serif;
   font-size: 16px;
+  color: #343f49;
 }
 
 a {
@@ -18,6 +21,9 @@ a:hover {
   margin-right: auto;
   margin-left: auto;
 }
+
+
+/***** Header ****/
 
 .header-section-wrapper {
   padding-top: 25px;
@@ -58,4 +64,61 @@ a:hover {
 
 .social-link:hover svg path {
   fill: #e71b4f;
+}
+
+
+/***** Navigation ****/
+.nav-section-wrapper {
+  background-color: #343f49;
+}
+
+.main-nav {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.main-nav--top {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.main-nav-item {
+  position: relative;
+}
+
+.main-nav--sub {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  min-width: 200px;
+}
+
+.main-nav-item:hover .main-nav--sub {
+  display: block;
+}
+
+.main-nav-link {
+  padding: 20px;
+  background-color: #343f49;
+  color: #fff;
+  display: block;
+}
+
+.main-nav-link--sub-level {
+  font-size: 0.875rem;
+}
+
+.main-nav-link:hover {
+  color: #fff;
+  background-color: #439dc0;
+}
+
+
+/**** MAIN SECTION ****/
+.main-section-wrapper {
+  background-color: #f5f5f8;
 }
