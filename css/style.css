@@ -2,9 +2,10 @@
 
 /* General Styles */
 body, html {
-  font-family: Arial, sans-serif;
+  /*font-family: Arial, sans-serif;*/
   font-size: 16px;
   color: #343f49;
+  font-family: neuzeit-grotesk,Arial,sans-serif;
 }
 
 * {
@@ -33,12 +34,12 @@ a:hover {
   padding-right: 20px;
 }
 
-.section-wrapper {
+.section-inner-wrap {
   margin-left: -20px;
   margin-right: -20px;
 }
 
-.main-section-wrapper > .container {
+.main-section-wrapper > .section-inner-wrap > .container {
   background-color: #fff;
   border-left: 1px solid #eee;
   border-right: 1px solid #eee;
@@ -123,6 +124,8 @@ a:hover {
 }
 
 .main-nav-link {
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
   padding: 20px;
   background-color: #343f49;
   color: #fff;
@@ -130,7 +133,8 @@ a:hover {
 }
 
 .main-nav-link--sub-level {
-  font-size: 0.875rem;
+  font-size: 1rem;
+  line-height: 1.1rem;
 }
 
 .main-nav-link:hover {
@@ -168,16 +172,17 @@ a:hover {
 }
 
 .issue-tile__title {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 15px;
   right: 15px;
   z-index: 10;
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
 }
 
 .issue-tile__image-wrap:after {
@@ -269,17 +274,40 @@ a:hover {
 /*** FEEDS ****/
 .feeds-wrap {
   display: flex;
-  margin-left: -25px;
-  margin-right: -25px;
+  margin-left: -20px;
+  margin-right: -20px;
 }
 
 .feed {
   width: 33%;
-  padding: 0px 25px;
+  padding: 0px 20px;
+}
+
+.feed__title {
+  font-size: 1.75rem;
+  line-height: 2rem;
+  margin: 0;
+  border-bottom: 1px solid #e71b4f;
+  display: inline-block;
+}
+
+.feed__content {
+  margin-top: 20px;
 }
 
 .feed-item {
-  padding: 15px;
   background-color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.feed-item__link {
+  font-size: 1.25rem;
+  line-height: 1.65rem;
+  color: #343f49;
+  font-weight: bold;
+  display: block;
+}
+
+.feed-item__content {
+  margin-top: 3px;
 }
