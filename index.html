@@ -312,12 +312,16 @@
             <div class="feeds-wrap">
               <div class="feed">
                 <h2 class="feed__title">NCTA on Twitter</h2>
-                <a class="twitter-timeline" href="https://twitter.com/NCTAitv" width="300" height="225" data-chrome="noheader nofooter noborders transparent" data-widget-id="494009121746599936">Tweets by @NCTAitv</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                <div class="feed__content">
+                  <a class="twitter-timeline" href="https://twitter.com/NCTAitv" width="300" height="225" data-chrome="noheader nofooter noborders transparent" data-widget-id="494009121746599936">Tweets by @NCTAitv</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                </div>
               </div>
 
               <div class="feed">
                 <h2 class="feed__title">NCTA on Facebook</h2>
-                <div class="fb-like-box" data-href="https://www.facebook.com/NCTAitv/?fref=ts" data-width="300" data-height="225" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+                <div class="feed__content">
+                  <div class="fb-like-box" data-href="https://www.facebook.com/NCTAitv/?fref=ts" data-width="300" data-height="225" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+                </div>
               </div>
 
               <div class="feed">
@@ -350,6 +354,15 @@
 
   <script src="js/jquery.min.js"></script>
   <script src="js/script.js"></script>
+
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=139014179590035&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 
 </body>
 
